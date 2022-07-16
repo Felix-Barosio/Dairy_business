@@ -17,7 +17,7 @@ data.addEventListener('submit',dailystats);
 
                  console.log(res);
                  console.log("      ");
-                 document.getElementById('myhead').innerHTML="Days Amt.";
+                 document.getElementById('myhead').innerHTML="Day's Amt.";
                  document.getElementById('myleft').innerHTML=" Shed ";
                  document.getElementById('myright').innerHTML="Ltrs.";                 
                  document.getElementById('shed1').innerHTML=" A ";
@@ -42,8 +42,8 @@ data.addEventListener('submit',weeklyStats);
         let shedA= parseFloat(val1.value)*7;
 
              //html page
-        document.getElementById('weeklyheading').innerHTML="Week Stats.";        
-        document.getElementById('desc1').innerHTML="Shed A ";        
+        document.getElementById('weeklyheading').innerHTML="Week Stats.(Sheds)";        
+        document.getElementById('desc1').innerHTML=" A ";        
         document.getElementById('value1').innerHTML=shedA;
         document.getElementById('units1').innerHTML=units;
 
@@ -53,21 +53,21 @@ data.addEventListener('submit',weeklyStats);
         console.log("  ");
 
         let shedB= parseFloat(val2.value)*7;
-        document.getElementById('desc2').innerHTML="Shed B ";        
+        document.getElementById('desc2').innerHTML=" B ";        
         document.getElementById('value2').innerHTML=shedB;
         document.getElementById('units2').innerHTML=units;
         console.log("Shed B : "+ shedB+ " Litres.");
         console.log("  ");
 
         let shedC= parseFloat(val3.value)*7;
-        document.getElementById('desc3').innerHTML="Shed C ";        
+        document.getElementById('desc3').innerHTML=" C ";        
         document.getElementById('value3').innerHTML=shedC;
         document.getElementById('units3').innerHTML=units;
         console.log("Shed C : "+ shedC+ " Litres.");
         console.log("  ");
 
         let shedD= parseFloat(val4.value)*7;
-        document.getElementById('desc4').innerHTML="Shed D ";        
+        document.getElementById('desc4').innerHTML=" D ";        
         document.getElementById('value4').innerHTML=shedD;
         document.getElementById('units4').innerHTML=units;
         console.log("Shed D : "+ shedD+ " Litres.");
