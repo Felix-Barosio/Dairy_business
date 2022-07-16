@@ -37,7 +37,161 @@
     <div id="mid">
         <h3>Yellowstone Farm Milk Production Stats.</h3>
     </div>
-    
+    <div id="main_container">
+        <div  id="container">
+            
+            <section id="right">
+                <h3>Milk Production In liters.</h3>
+                <form id="data" >
+                    <div id="form">
+                        <label for="shedA" >Your Production in Shade A
+                            <input type="text" id="shedA" placeholder="Amt. in Liters">
+                        </label>
+
+                        <label for="shedB" >Your Production in Shade B
+                            <input type="text" id="shedB" placeholder="Amt. in liters">
+                        </label><br>
+
+                        <label for="shedC" >Your Production in Shade C
+                            <input type="text" id="shedC" placeholder="Amt. in Liters">
+                        </label><br>
+
+                        <label for="shedB" >Your Production in Shade D
+                            <input type="text" id="shedD" placeholder="Amt. in Liters">
+                        </label><br>
+                 </div>
+                    <div id="btn_container">
+                    <button id="totals" type="submit" name="totals">Daily Total</button>
+                    </div>
+                </form>
+                <div class="sums">
+                    <article id="daily">
+                        <table>
+                            <tr>
+                                <th id="heading" colspan="2"></th>
+                            </tr>
+                            <tr>
+                                <th id="thleft"></th>
+                                <th id="thright"></th>
+                            </tr>
+                            <tr>
+                                <td id="shed1"></td>
+                                <td id="shed1val"></td>
+                            </tr>
+                            <tr>
+                                <td id="shed2"></td>
+                                <td id="shed2val"></td>
+                            </tr>
+                            <tr>
+                                <td id="shed3"></td>
+                                <td id="shed3val"></td>
+                            </tr>
+                            <tr>
+                                <td id="shed4"></td>
+                                <td id="shed4val"></td>
+                            </tr>
+                            <tr>
+                                <td id="allsheds"></td>
+                                <td id="totalsheds"></td>
+                            </tr>
+                        </table>
+
+                    </article>
+                    <article id="weekly">
+                        <table>
+                            <tr>
+                                <th colspan="3"><h1 id="weeklyheading"></h1></th>
+                            </tr>
+                            <tr>
+                                <td id="description1"></td>
+                                <td id="value1"></td>
+                                <td id="units1"></td>
+                            </tr>
+                            <tr>
+                                <td id="description2"></td>
+                                <td id="value2"></td>
+                                <td id="units2"></td>
+                            </tr>
+                            <tr>
+                                <td id="description3"></td>
+                                <td id="value3"></td>
+                                <td id="units3"></td>
+                            </tr>
+                            <tr>
+                                <td id="description4"></td>
+                                <td id="value4"></td>
+                                <td id="units4"></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">Weekly Total</td>
+                                <td id="wtotals"></td>
+                            </tr>
+                        </table>
+
+                    </article>
+                </div>
+            </section>
+            <section id="left">
+                <h3>Stats For Year 2016</h3>
+                <hr>
+                <h3>Monthly Income...<span><button id="MIstats" onclick="getStats()"> Rates*</button></span></h3>
+                <table>
+                    <tr>
+                        <th>Month</th>
+                        <th>Production</th>
+                        <th>Income</th>
+                    </tr>
+                    <tr>
+                        <td>January</td>  <td id="janP"></td> <td id="janI"></td> 
+                    </tr>
+                    <tr>
+                        <td>Febuary</td>  <td id="febP"></td> <td id="febI"></td> 
+                    </tr>
+                    <tr>
+                        <td>March</td>  <td id="marP"></td> <td id="marI"></td> 
+                    </tr>
+                    <tr>
+                        <td>April</td>  <td id="aprP"></td> <td id="aprI"></td> 
+                    </tr>
+                    <tr>
+                        <td>May</td>  <td id="mayP"></td> <td id="mayI"></td> 
+                    </tr>
+                    <tr>
+                        <td>June</td>  <td id="junP"></td> <td id="junI"></td> 
+                    </tr>
+                    <tr>
+                        <td>July</td>  <td id="julP"></td> <td id="julI"></td> 
+                    </tr>
+                    <tr>
+                        <td>August</td>  <td id="augP"></td> <td id="augI"></td> 
+                    </tr>
+                    <tr>
+                        <td>September</td>  <td id="sepP"></td> <td id="sepI"></td> 
+                    </tr>
+                    <tr>
+                        <td>October</td>  <td id="octP"></td> <td id="octI"></td> 
+                    </tr>
+                    <tr>
+                        <td>November</td>  <td id="novP"></td> <td id="novI"></td> 
+                    </tr>
+                    <tr>
+                        <td>December</td>  <td id="decP"></td> <td id="decI"></td> 
+                    </tr>
+                </table>
+                <hr>
+                <h2>Yearly Total</h2>
+                <h3 id="endyearincome"></h3>
+
+
+            </section>
+           
+        </div>
+    </div>
 
    <script src="./assets/js/script.js"></script>
 </body>
