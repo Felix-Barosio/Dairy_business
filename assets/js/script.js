@@ -17,9 +17,9 @@ data.addEventListener('submit',dailystats);
 
                  console.log(res);
                  console.log("      ");
-                 document.getElementById('heading').innerHTML="Days Amt.";
-                 document.getElementById('thleft').innerHTML=" Shed ";
-                 document.getElementById('thright').innerHTML="Ltrs.";                 
+                 document.getElementById('myhead').innerHTML="Days Amt.";
+                 document.getElementById('myleft').innerHTML=" Shed ";
+                 document.getElementById('myright').innerHTML="Ltrs.";                 
                  document.getElementById('shed1').innerHTML=" A ";
                  document.getElementById('shed1val').innerHTML=val1.value;
                  document.getElementById('shed2').innerHTML=" B ";
@@ -28,7 +28,7 @@ data.addEventListener('submit',dailystats);
                  document.getElementById('shed3val').innerHTML=val3.value;
                  document.getElementById('shed4').innerHTML=" D ";
                  document.getElementById('shed4val').innerHTML=val4.value;
-                 document.getElementById('allsheds').innerHTML=" Totals ";
+                 document.getElementById('allsheds').innerHTML=" Total ";
                  document.getElementById('totalsheds').innerHTML=res;
 
             }
@@ -108,57 +108,57 @@ function getStats(){
     document.getElementById('marInc').innerHTML="Ksh. "+marchIncome;
 
     // April
-    let aprProd =totalProductionDaily*30;
-    let aprIncome =aprProd*rates;
-    document.getElementById('aprProd').innerHTML=aprProd;
+    let aprProduction =totalProductionDaily*30;
+    let aprIncome =aprProduction*rates;
+    document.getElementById('aprProd').innerHTML=aprProduction;
     document.getElementById('aprInc').innerHTML="Ksh. "+aprIncome;
 
     //May
-    let mayProd =totalProductionDaily*31;
-    let mayIncome =mayProd*rates;
-    document.getElementById('mayProd').innerHTML=mayProd;
+    let mayProduction =totalProductionDaily*31;
+    let mayIncome =mayProduction*rates;
+    document.getElementById('mayProd').innerHTML=mayProduction;
     document.getElementById('mayInc').innerHTML="Ksh. "+mayIncome;
 
     //June
-    let junProd= totalProductionDaily*30;
-    let junIncome= junProd*rates;
-    document.getElementById('junProd').innerHTML=junProd;
+    let junProduction= totalProductionDaily*30;
+    let junIncome= junProduction*rates;
+    document.getElementById('junProd').innerHTML=junProduction;
     document.getElementById('junInc').innerHTML="Ksh. "+junIncome;
 
     //July
-    let julyprod=totalProductionDaily*31;
-    let julyIncome=julyprod*rates;
-    document.getElementById('julProd').innerHTML=julyprod;
+    let julyproduction=totalProductionDaily*31;
+    let julyIncome=julyproduction*rates;
+    document.getElementById('julProd').innerHTML=julyproduction;
     document.getElementById('julInc').innerHTML="Ksh. "+julyIncome;
 
     //August
-    let augProd=totalProductionDaily*31;
-    let augIncome=augProd*rates;
-    document.getElementById('augProd').innerHTML=augProd;
+    let augProduction=totalProductionDaily*31;
+    let augIncome=augProduction*rates;
+    document.getElementById('augProd').innerHTML=augProduction;
     document.getElementById('augInc').innerHTML="Ksh. "+augIncome;
 
     //September
-    let sepProd= totalProductionDaily*30;
-    let sepIncome=sepProd*rates;
-    document.getElementById('sepProd').innerHTML=sepProd;
+    let sepProduction= totalProductionDaily*30;
+    let sepIncome=sepProduction*rates;
+    document.getElementById('sepProd').innerHTML=sepProduction;
     document.getElementById('sepInc').innerHTML="Ksh. "+sepIncome;
 
     //October
-    let octProd = totalProductionDaily*31;
-    let octIncome= octProd*rates;
-    document.getElementById('octProd').innerHTML=octProd;
+    let octProduction = totalProductionDaily*31;
+    let octIncome= octProduction*rates;
+    document.getElementById('octProd').innerHTML=octProduction;
     document.getElementById('octInc').innerHTML="Ksh. "+octIncome;
 
     //November
-    let novProd=totalProductionDaily*30;
-    let novIncome=novProd*rates;
-    document.getElementById('novProd').innerHTML=novProd;
+    let novProduction=totalProductionDaily*30;
+    let novIncome=novProduction*rates;
+    document.getElementById('novProd').innerHTML=novProduction;
     document.getElementById('novInc').innerHTML="Ksh. "+novIncome;
 
     // December
-    let decProd= totalProductionDaily*31;
-    let decIncome=decProd*rates;
-    document.getElementById('decProd').innerHTML=decProd;
+    let decProduction= totalProductionDaily*31;
+    let decIncome=decProduction*rates;
+    document.getElementById('decProd').innerHTML=decProduction;
     document.getElementById('decInc').innerHTML="Ksh. "+decIncome;
 
     // Yearly income
