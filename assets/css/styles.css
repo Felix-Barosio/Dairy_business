@@ -156,6 +156,9 @@ body{
 #mid h3{
     font-size: 2.5vw;
 }
+
+
+
         /*  main section */
 
 #main_container{
@@ -177,12 +180,13 @@ body{
 #left h3{
     font-size: 2.5vw;
 }
-#MIstats{
-    padding: 1.3vw;
-    color: black;
+#Rates{
+    padding: 1.1vw;
+    color: #fff;
     background-color: #ceb736;
-    font-weight: bold;
-    border-radius: 1.1vw;
+    font-weight: 400;
+    border-radius: 1.4vw;
+    font-size: 1.2vw;
 }
         
 #right {
@@ -226,11 +230,13 @@ body{
 }
 #totals{
     cursor: pointer;
-    background-color: #fff;
-    color: #268da3;
+    background-color: #ceb736;
+    color: #fff;
     padding: 0.5vw;
-    display: flex;
-    justify-content: space-between;
+    margin-top: 0.8vw;
+    border-radius: 1.1vw;
+    font-size: 1.3vw;
+    margin-left: 12.4vw;
 }
 #totals:hover{
     color: black;
