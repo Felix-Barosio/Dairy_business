@@ -131,7 +131,7 @@ body{
     background-color: #fff;
 
 }
-
+            /*main container*/
 #mid{
     display: flex;
     text-align: center;
@@ -180,7 +180,7 @@ body{
 #MIstats{
     padding: 1.3vw;
     color: black;
-    background-color: #ed661f;
+    background-color: #ceb736;
     font-weight: bold;
     border-radius: 1.1vw;
 }
@@ -236,7 +236,7 @@ body{
     color: black;
 }
 tr th{
-    color: red;
+    color: black;
     font-size: 1.7vw;
 }
 tr td{
