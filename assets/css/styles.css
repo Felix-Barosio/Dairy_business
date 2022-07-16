@@ -8,7 +8,7 @@ body{
     font-family: 'Space Grotesk', sans-serif;
 }
 
-.nav_bar{
+#nav_bar{
     padding: 0vw;
     margin: 0vw;
     overflow-x: hidden;
@@ -16,21 +16,21 @@ body{
     background-color: #fff;
     box-shadow: 0 0 3px #000;
 }
-.header{
+#header{
     padding: 1.5vw;
     box-shadow: 0 0 3px #000;
     font-size: 1.5vw;  
 }
 
-.header li img{
+#header li img{
     width: 3.9vw;
     margin-top: -20px;
 }
-.header .active{
+#header .active{
     
     position: relative;
 }
-.header .active::before{
+#header .active::before{
     content: '';
     position: absolute;
     left: 0.6vw;
@@ -41,13 +41,13 @@ body{
     width: 3.9vw;
 }
 
-.header li{
+#header li{
     display: inline;
     padding-left: 1.7vw;
       
 }
 
-.header li a{
+#header li a{
     text-decoration: none;
     padding: 0.5vw;
     transition: 0.5s ease;
@@ -55,11 +55,11 @@ body{
     color: #000;
 }
 
-.header li a:hover{
+#header li a:hover{
     color: purple;
 }
 
-.header ul #contact a{
+#header ul #contact a{
     color: #ffffff;
     font-size: 1.8vw;
     background-color: #3a27e4;
@@ -69,11 +69,11 @@ body{
     
 
 }
-.header ul #contact a:hover{
+#header ul #contact a:hover{
     background-color: #3a27e4;
 }
 
-.header ul #stone a{
+#header ul #stone a{
     float: left;
     font-size: 3.1vw;
     font-family: 'Oleo Script', cursive;
@@ -83,7 +83,7 @@ body{
     
 }
 
-.header ul #stone a:hover{
+#header ul #stone a:hover{
     background-color: #ffffff;
 }
 
@@ -132,7 +132,7 @@ body{
 
 }
 
-.mid{
+#mid{
     display: flex;
     text-align: center;
     justify-content: center;
@@ -141,7 +141,7 @@ body{
 
 }
 
-.mid h3{
+#mid h3{
     font-size: 2.5vw;
 }
         /*  main section */
