@@ -1,11 +1,14 @@
-let data = document.getElementById('data');
+
+//I can do this
+
+
 
 const val1 = document.getElementById("shedA");
 const val2 = document.getElementById("shedB");
 const val3 = document.getElementById("shedC");
 const val4 = document.getElementById("shedD");
 
-
+//daily stats
 data.addEventListener('submit',dailystats);
 
     function dailystats(e){
@@ -30,37 +33,41 @@ data.addEventListener('submit',dailystats);
 
             }
 
+
+            //weekly stats
 data.addEventListener('submit',weeklyStats);
 
     function weeklyStats(){
         let units="  litres."
         let shedA= parseFloat(val1.value)*7;
-             //display to html page
+
+             //html page
         document.getElementById('weeklyheading').innerHTML="WEEKLY STATS";        
-        document.getElementById('description1').innerHTML="Shed A ";        
+        document.getElementById('desc1').innerHTML="Shed A ";        
         document.getElementById('value1').innerHTML=shedA;
         document.getElementById('units1').innerHTML=units;
-            //display to console
+
+            //console
         console.log("WEEKLY STATS");
         console.log("Shed A weekly collection : "+ shedA+ " Litres.");
         console.log("  ");
 
         let shedB= parseFloat(val2.value)*7;
-        document.getElementById('description2').innerHTML="Shed B ";        
+        document.getElementById('desc2').innerHTML="Shed B ";        
         document.getElementById('value2').innerHTML=shedB;
         document.getElementById('units2').innerHTML=units;
         console.log("Shed B weekly collection : "+ shedB+ " Litres.");
         console.log("  ");
 
         let shedC= parseFloat(val3.value)*7;
-        document.getElementById('description3').innerHTML="Shed C ";        
+        document.getElementById('desc3').innerHTML="Shed C ";        
         document.getElementById('value3').innerHTML=shedC;
         document.getElementById('units3').innerHTML=units;
         console.log("Shed C weekly collection : "+ shedC+ " Litres.");
         console.log("  ");
 
         let shedD= parseFloat(val4.value)*7;
-        document.getElementById('description4').innerHTML="Shed D ";        
+        document.getElementById('desc4').innerHTML="Shed D ";        
         document.getElementById('value4').innerHTML=shedD;
         document.getElementById('units4').innerHTML=units;
         console.log("Shed D weekly collection : "+ shedD+ " Litres.");
@@ -73,7 +80,7 @@ data.addEventListener('submit',weeklyStats);
         document.getElementById('wtotals').innerHTML=totLitres+" Litres."
         console.log(totLitres+" Ltr.");
     }
-
+//prompt/alert
 function getStats(){
     let rate = prompt("Enter rate in Ksh ",'45.0');
     let rates=parseFloat(rate);
@@ -81,13 +88,14 @@ function getStats(){
     let weeklyIncome= rates*totalProductionDaily*7;
     console.log(weeklyIncome);
 
-    //january
+    //Months * Remember its leap year
+    //January
     let janProduction= totalProductionDaily*31;
     let janIncome= janProduction*rates;
     document.getElementById('janP').innerHTML=janProduction;
     document.getElementById('janI').innerHTML="Ksh. "+janIncome;
 
-    //febuary(29days)
+    //febuary(29days)*
     let febProduction=totalProductionDaily*29;
     let febIncome=febProduction*rates;
     document.getElementById('febP').innerHTML=febProduction;
