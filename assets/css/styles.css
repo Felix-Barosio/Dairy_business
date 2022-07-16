@@ -35,7 +35,7 @@ body{
     position: absolute;
     left: 0.6vw;
     bottom: 0.2vw;
-    background-color: #3a27e4;
+    background-color: #ceb736;
     height: 0.2vw;
     box-sizing: border-box;
     width: 3.9vw;
@@ -62,7 +62,7 @@ body{
 #header ul #contact a{
     color: #ffffff;
     font-size: 1.8vw;
-    background-color: #3a27e4;
+    background-color: #ceb736;
     border-radius: 1vw;
     float: right;
     margin-top: -15px;
@@ -115,7 +115,7 @@ body{
     position: absolute;
     bottom: -0.9vw;
     left: 15vw;
-    background-color: #3a27e4;
+    background-color: #ceb736;
     height: 0.4vw;
     box-sizing: border-box;
     width: 20vw;
@@ -138,6 +138,18 @@ body{
     justify-content: center;
     margin-top: 1.5vw;
     margin-bottom: 1.5vw;
+    position: relative;
+
+}
+#mid::before{
+    content: '';
+    position: absolute;
+    bottom: -0.9vw;
+    left: 40vw;
+    background-color: #ceb736;
+    height: 0.4vw;
+    box-sizing: border-box;
+    width: 20vw;
 
 }
 
