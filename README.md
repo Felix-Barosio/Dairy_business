@@ -1,4 +1,4 @@
-# 
+# Yellostone Dairy Farm
 
 By Felix Barosio
 
@@ -19,8 +19,10 @@ It is a description of my current project.
 
 ## Description
 
-The project is called .
+The project is called Yellostone Dairy Farm.
 
+The project provides a farmer a platform where they can calculate milk produced in his farm.
+It gives them plaform where they can know how much income they can get on daily, weekly and yearly. 
 
 
 ## Github Pages Link
@@ -37,6 +39,7 @@ The project is called .
 
 - HTML - Used to build the structure of the pages.
 - CSS - Used to style the pages.
+- JavaScript - Used to create dynamically updating content.
 
 ## Reference
 
