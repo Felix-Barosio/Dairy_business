@@ -87,6 +87,7 @@ function getStats(){
     console.log(weeklyIncome);
 
     //Months * Remember its leap year
+    
     //January
     let janProduction= totalProductionDaily*31;
     let janIncome= janProduction*rates;
@@ -163,14 +164,14 @@ function getStats(){
     let incomeOverYear=janIncome+febIncome+marchIncome+aprIncome+mayIncome+junIncome+julyIncome+augIncome+sepIncome+octIncome+novIncome+decIncome;
     document.getElementById('endyearincome').innerHTML="Ksh "+incomeOverYear;
     
-}
+/*}
 const rateChange = () => {
     var invoice = document.getElementById("invoice");
     if(milkAmount > 45){
       invoice.display = "block"
     }else{
         invoice.display = "none"
-    }
+    }*/
 }
 
 const generatePdf = () => {
