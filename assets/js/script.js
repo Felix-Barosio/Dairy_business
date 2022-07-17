@@ -40,7 +40,7 @@ data.addEventListener('submit',weeklyStats);
         let shedA= parseFloat(val1.value)*7;
 
              
-        document.getElementById('weeklyH').innerHTML="Week's Report.(Sheds)";        
+        document.getElementById('weeklyH').innerHTML="Week's Report.";        
         document.getElementById('desc1').innerHTML=" ShedA ";        
         document.getElementById('value1').innerHTML=shedA;
         document.getElementById('units1').innerHTML=units;
