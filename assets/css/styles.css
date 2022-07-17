@@ -186,7 +186,7 @@ body{
 #milk h3{
     color: #000;
     text-align: center;
-    font-size: 2.5vw;
+    font-size: 2.1vw;
 }
 #milk #form{
     display: flex;
@@ -215,6 +215,12 @@ body{
 #milk #form input:focus{
     outline: none;
 }
+
+::-webkit-input-placeholder{
+    color: #268da3;
+    font-size: 1.1vw;
+    text-align: center;
+}
         
 #cash {
     text-align: center;
@@ -223,12 +229,38 @@ body{
     background-image: linear-gradient(to top, #268da3, transparent);
 }
 #cash h3{
-    font-size: 2.5vw;
+    font-size: 1.8vw;
+}
+#cash h2{
+    font-size: 2.1vw;
+}
+#cash tr th{
+    color: #3a27e4;
+}
+
+#cash tr{
+    color: #fff;
 }
 
 #cash tr td{
     text-align: left;
+    font-size: 1.6vw;
 }
+#daily tr td{
+    font-size: 1.5vw;
+}
+
+#daily tr th{
+    font-size: 1.7vw;
+    margin-top: 1.1vw;
+    color: #3a27e4;
+}
+
+#daily #day{
+    color: #3a27e4;
+    left: 1.1vw;
+}
+
 #Rates{
     padding: 1.1vw;
     color: #fff;
@@ -247,7 +279,7 @@ body{
     margin-top: 0.8vw;
     border-radius: 1.1vw;
     font-size: 1.3vw;
-    margin-left: 12.4vw;
+    margin-left: 13vw;
 }
 #total_btn:hover{
     color: gainsboro;
@@ -266,14 +298,14 @@ tr td{
     flex-wrap: wrap;
 }
 #daily,#weekly{
-    height: 29vw;
+    height: 26vw;
     padding: 0.5vw;
-    width: 45%;
+    width: 47%;
     position: relative;
     top: 1.1vw;
     gap: 0.5vw;
     margin: auto;
-    box-shadow: 0.3vw 0.3vw 1.1vw;
+    box-shadow: 0.2vw 0.2vw 1.1vw;
 }
 #daily{
     text-align: center;
@@ -289,6 +321,15 @@ table {
 }
 td{
     text-align: center;
+}
+
+#weekly tr td{
+    font-size: 1.5vw;
+}
+
+#weekly tr th{
+    font-size: 1.6vw;
+    color: #3a27e4;
 }
 #weekly{
     background-image: linear-gradient(to top, #268da3, transparent);
@@ -310,7 +351,7 @@ ul{
     
 }
 ul li{
-    font-size: 1.5vw;
+    font-size: 1.3vw;
 }
 .row{
     display: flex;
@@ -325,11 +366,11 @@ ul li{
 
 .cont2{
     width: 20%;
-    padding: 0 17px;
+    padding: 0 1.3vw;
 }
 
 .cont2 h4{
-    font-size: 1.4vw;
+    font-size: 1.8vw;
     margin-bottom: 20px;
     color: #000;
     font-weight: 700;
@@ -402,7 +443,11 @@ ul li{
     display: flex;
     align-content: center;
     justify-content: center;
-    margin-left: 47vw;
+    margin-left: 50vw;
     cursor: pointer;
 
+}
+
+.cont2 #agri{
+    left: 0vw;
 }
