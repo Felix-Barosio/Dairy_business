@@ -378,3 +378,13 @@ ul li{
 #qual{
     font-size: 1.4vw;
 }
+
+.btn{
+    margin-top: 1.1vw;
+    
+    background-color: #ceb736;
+    padding: 1.5vw;
+    color: #fff;
+    border-radius: 1.1vw;
+
+}
