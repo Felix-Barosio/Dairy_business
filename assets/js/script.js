@@ -15,9 +15,9 @@ data.addEventListener('submit',dailystats);
 
                  console.log(res);
                  console.log("      ");
-                 document.getElementById('myhead').innerHTML="Day's Report.";
-                 document.getElementById('myleft').innerHTML=" Shed ";
-                 document.getElementById('myright').innerHTML="Ltrs.";                 
+                 document.getElementById('day').innerHTML="Day's Report.";
+                 document.getElementById('shedsI').innerHTML=" Shed ";
+                 document.getElementById('amountI').innerHTML="Ltrs.";                 
                  document.getElementById('shed1').innerHTML=" A ";
                  document.getElementById('shed1val').innerHTML=val1.value;
                  document.getElementById('shed2').innerHTML=" B ";
