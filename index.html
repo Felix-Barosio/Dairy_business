@@ -24,14 +24,15 @@
     </div>
             <!----------welcome section------------->
     <div class="cont_1">
+        
+        <div class="photo">
+            <img src="./assets/images/cows.png" alt="">
+        </div>
         <div class="sect_1">
             <div class="wel">
                 <h2 id="yel">Welcome To Yellowstone Dairy Farm.</h2>
-                <p>The best producer of Quality Dairy Products in the Valley.</p>
+                <p id="best">The best producer of Quality Dairy Products in the Valley.</p>
             </div>
-        </div>
-        <div class="photo">
-            <img src="./assets/images/cows.png" alt="">
         </div>
     </div>
 
@@ -41,7 +42,7 @@
     <div id="main_container">
         <div  id="container">
             
-            <section id="right">
+            <section id="milk">
                 <h3>Milk Production In Liters.</h3>
                 <form id="data" >
                     <div id="form">
@@ -57,12 +58,12 @@
                             <input type="text" id="shedC" placeholder="Amt. in Liters">
                         </label><br>
 
-                        <label for="shedB" >Your Production in Shade D
+                        <label for="shedD" >Your Production in Shade D
                             <input type="text" id="shedD" placeholder="Amt. in Liters">
                         </label><br>
                  </div>
                     <div id="btn_container">
-                    <button id="totals" type="submit" name="totals">Daily Total</button>
+                    <button id="total_btn" type="submit" name="totals">Submit Record</button>
                     </div>
                 </form>
                 <div class="mon">
@@ -129,16 +130,16 @@
                                 <td></td>
                             </tr>
                             <tr>
-                                <td colspan="2">Total</td>
-                                <td id="wtotals"></td>
+                                <td colspan="2" id="shedstotal"></td>
+                                
                             </tr>
                         </table>
 
                     </article>
                 </div>
             </section>
-            <section id="left">
-                <h3>Stats For Year 2016.</h3>
+            <section id="cash">
+                <h3>Yellostone Stats For Year.</h3>
                 <hr>
                 <h3>Monthly Income...<span><button id="Rates" onclick="getStats()"> Rates*</button></span></h3>
                 <table>
@@ -148,47 +149,45 @@
                         <th>Income(ksh.)</th>
                     </tr>
                     <tr>
-                        <td>January</td>  <td id="janProd"></td> <td id="janInc"></td> 
+                        <td>In January</td>  <td id="janProd"></td> <td id="janInc"></td> 
                     </tr>
                     <tr>
-                        <td>Febuary</td>  <td id="febProd"></td> <td id="febInc"></td> 
+                        <td>In Febuary</td>  <td id="febProd"></td> <td id="febInc"></td> 
                     </tr>
                     <tr>
-                        <td>March</td>  <td id="marProd"></td> <td id="marInc"></td> 
+                        <td>In March</td>  <td id="marProd"></td> <td id="marInc"></td> 
                     </tr>
                     <tr>
-                        <td>April</td>  <td id="aprProd"></td> <td id="aprInc"></td> 
+                        <td>In April</td>  <td id="aprProd"></td> <td id="aprInc"></td> 
                     </tr>
                     <tr>
-                        <td>May</td>  <td id="mayProd"></td> <td id="mayInc"></td> 
+                        <td>In May</td>  <td id="mayProd"></td> <td id="mayInc"></td> 
                     </tr>
                     <tr>
-                        <td>June</td>  <td id="junProd"></td> <td id="junInc"></td> 
+                        <td>In June</td>  <td id="junProd"></td> <td id="junInc"></td> 
                     </tr>
                     <tr>
-                        <td>July</td>  <td id="julProd"></td> <td id="julInc"></td> 
+                        <td>In July</td>  <td id="julProd"></td> <td id="julInc"></td> 
                     </tr>
                     <tr>
-                        <td>August</td>  <td id="augProd"></td> <td id="augInc"></td> 
+                        <td>In August</td>  <td id="augProd"></td> <td id="augInc"></td> 
                     </tr>
                     <tr>
-                        <td>September</td>  <td id="sepProd"></td> <td id="sepInc"></td> 
+                        <td>In September</td>  <td id="sepProd"></td> <td id="sepInc"></td> 
                     </tr>
                     <tr>
-                        <td>October</td>  <td id="octProd"></td> <td id="octInc"></td> 
+                        <td>In October</td>  <td id="octProd"></td> <td id="octInc"></td> 
                     </tr>
                     <tr>
-                        <td>November</td>  <td id="novProd"></td> <td id="novInc"></td> 
+                        <td>In November</td>  <td id="novProd"></td> <td id="novInc"></td> 
                     </tr>
                     <tr>
-                        <td>December</td>  <td id="decProd"></td> <td id="decInc"></td> 
+                        <td>In December</td>  <td id="decProd"></td> <td id="decInc"></td> 
                     </tr>
                 </table>
                 <hr>
                 <h2>Year's Report</h2>
                 <h3 id="endyearincome"></h3>
-
-
             </section>
            
         </div>
@@ -197,7 +196,7 @@
         </div>
     </div>
 
-    <!--footer-->
+    <!-----Footer--------->
     <div class="footer">
         <div class="footer_container">
             <div class="row">
