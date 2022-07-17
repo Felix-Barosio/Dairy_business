@@ -262,6 +262,7 @@ body{
 }
 
 #Rates{
+    cursor: pointer;
     padding: 1.1vw;
     color: #fff;
     background-color: #95cd9e;
