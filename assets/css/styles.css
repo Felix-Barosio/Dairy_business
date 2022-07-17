@@ -161,8 +161,6 @@ body{
     font-weight: 100;
 }
 
-
-
         /*  main_container section */
 
 #main_container{
@@ -343,8 +341,7 @@ td{
     margin-right: 10px;
     padding: 0;
     box-sizing: border-box;
-    background-color: #268da3;
-    
+    background-color: #268da3;  
 }
 
 ul{
