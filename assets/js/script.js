@@ -26,7 +26,7 @@ data.addEventListener('submit',dailystats);
                  document.getElementById('shed3val').innerHTML=val3.value;
                  document.getElementById('shed4').innerHTML=" D ";
                  document.getElementById('shed4val').innerHTML=val4.value;
-                 document.getElementById('allsheds').innerHTML=" Total ";
+                 document.getElementById('allsheds').innerHTML=" Total. ";
                  document.getElementById('totalsheds').innerHTML=res;
 
             }
@@ -41,7 +41,7 @@ data.addEventListener('submit',weeklyStats);
 
              //html page
         document.getElementById('weeklyH').innerHTML="Week's Report.(Sheds)";        
-        document.getElementById('desc1').innerHTML=" A ";        
+        document.getElementById('desc1').innerHTML=" ShedA ";        
         document.getElementById('value1').innerHTML=shedA;
         document.getElementById('units1').innerHTML=units;
 
@@ -51,21 +51,21 @@ data.addEventListener('submit',weeklyStats);
         console.log("  ");
 
         let shedB= parseFloat(val2.value)*7;
-        document.getElementById('desc2').innerHTML=" B ";        
+        document.getElementById('desc2').innerHTML=" ShedB ";        
         document.getElementById('value2').innerHTML=shedB;
         document.getElementById('units2').innerHTML=units;
         console.log(" B : "+ shedB+ " Litres.");
         console.log("  ");
 
         let shedC= parseFloat(val3.value)*7;
-        document.getElementById('desc3').innerHTML=" C ";        
+        document.getElementById('desc3').innerHTML=" ShedC ";        
         document.getElementById('value3').innerHTML=shedC;
         document.getElementById('units3').innerHTML=units;
         console.log(" C : "+ shedC+ " Litres.");
         console.log("  ");
 
         let shedD= parseFloat(val4.value)*7;
-        document.getElementById('desc4').innerHTML=" D ";        
+        document.getElementById('desc4').innerHTML=" ShedD ";        
         document.getElementById('value4').innerHTML=shedD;
         document.getElementById('units4').innerHTML=units;
         console.log(" D : "+ shedD+ " Litres.");
@@ -75,8 +75,8 @@ data.addEventListener('submit',weeklyStats);
         console.log(" Totals from Sheds");
         
         let totLitres = shedA+shedB+shedC+shedD;
-        document.getElementById('wtotals').innerHTML=totLitres+" Litres."
-        console.log(totLitres+" Ltr.");
+        document.getElementById('shedstotal').innerHTML=" Total " + totLitres + " Ltrs."
+        console.log("Total " +totLitres+" Ltr.");
     }
 //prompt/alert
 function getStats(){
@@ -163,6 +163,14 @@ function getStats(){
     let incomeOverYear=janIncome+febIncome+marchIncome+aprIncome+mayIncome+junIncome+julyIncome+augIncome+sepIncome+octIncome+novIncome+decIncome;
     document.getElementById('endyearincome').innerHTML="Ksh "+incomeOverYear;
     
+}
+const rateChange = () => {
+    var invoice = document.getElementById("invoice");
+    if(milkAmount > 45){
+      invoice.display = "block"
+    }else{
+        invoice.display = "none"
+    }
 }
 
 const generatePdf = () => {
