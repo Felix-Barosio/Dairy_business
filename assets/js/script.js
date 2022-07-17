@@ -39,13 +39,13 @@ data.addEventListener('submit',weeklyStats);
         let units="  Litres."
         let shedA= parseFloat(val1.value)*7;
 
-             //html page
+             
         document.getElementById('weeklyH').innerHTML="Week's Report.(Sheds)";        
         document.getElementById('desc1').innerHTML=" ShedA ";        
         document.getElementById('value1').innerHTML=shedA;
         document.getElementById('units1').innerHTML=units;
 
-            //console
+            
         console.log("Weeks report");
         console.log(" A : "+ shedA+ " Litres.");
         console.log("  ");
@@ -76,7 +76,7 @@ data.addEventListener('submit',weeklyStats);
         
         let totLitres = shedA+shedB+shedC+shedD;
         document.getElementById('shedstotal').innerHTML=" Total " + totLitres + " Ltrs."
-        console.log("Total " +totLitres+" Ltr.");
+        console.log("Total " +totLitres+" Ltrs.");
     }
 //prompt/alert
 function getStats(){
