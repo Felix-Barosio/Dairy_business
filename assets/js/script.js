@@ -1,8 +1,6 @@
 
 //I can do this
 
-
-
 const val1 = document.getElementById("shedA");
 const val2 = document.getElementById("shedB");
 const val3 = document.getElementById("shedC");
@@ -17,7 +15,7 @@ data.addEventListener('submit',dailystats);
 
                  console.log(res);
                  console.log("      ");
-                 document.getElementById('myhead').innerHTML="Day's Amt.";
+                 document.getElementById('myhead').innerHTML="Day's Report.";
                  document.getElementById('myleft').innerHTML=" Shed ";
                  document.getElementById('myright').innerHTML="Ltrs.";                 
                  document.getElementById('shed1').innerHTML=" A ";
@@ -42,39 +40,39 @@ data.addEventListener('submit',weeklyStats);
         let shedA= parseFloat(val1.value)*7;
 
              //html page
-        document.getElementById('weeklyheading').innerHTML="Week Stats.(Sheds)";        
+        document.getElementById('weeklyH').innerHTML="Week's Report.(Sheds)";        
         document.getElementById('desc1').innerHTML=" A ";        
         document.getElementById('value1').innerHTML=shedA;
         document.getElementById('units1').innerHTML=units;
 
             //console
-        console.log("Weeks Stats");
-        console.log("Shed A : "+ shedA+ " Litres.");
+        console.log("Weeks report");
+        console.log(" A : "+ shedA+ " Litres.");
         console.log("  ");
 
         let shedB= parseFloat(val2.value)*7;
         document.getElementById('desc2').innerHTML=" B ";        
         document.getElementById('value2').innerHTML=shedB;
         document.getElementById('units2').innerHTML=units;
-        console.log("Shed B : "+ shedB+ " Litres.");
+        console.log(" B : "+ shedB+ " Litres.");
         console.log("  ");
 
         let shedC= parseFloat(val3.value)*7;
         document.getElementById('desc3').innerHTML=" C ";        
         document.getElementById('value3').innerHTML=shedC;
         document.getElementById('units3').innerHTML=units;
-        console.log("Shed C : "+ shedC+ " Litres.");
+        console.log(" C : "+ shedC+ " Litres.");
         console.log("  ");
 
         let shedD= parseFloat(val4.value)*7;
         document.getElementById('desc4').innerHTML=" D ";        
         document.getElementById('value4').innerHTML=shedD;
         document.getElementById('units4').innerHTML=units;
-        console.log("Shed D : "+ shedD+ " Litres.");
+        console.log(" D : "+ shedD+ " Litres.");
         console.log("  ");
 
 
-        console.log(" Totals from All Sheds");
+        console.log(" Totals from Sheds");
         
         let totLitres = shedA+shedB+shedC+shedD;
         document.getElementById('wtotals').innerHTML=totLitres+" Litres."
@@ -82,7 +80,7 @@ data.addEventListener('submit',weeklyStats);
     }
 //prompt/alert
 function getStats(){
-    let rate = prompt("Enter rate in Ksh ",'45.0');
+    let rate = prompt("Current Market rate in Ksh. ",'60.0');
     let rates=parseFloat(rate);
     let totalProductionDaily= parseFloat(val1.value)+parseFloat(val2.value)+parseFloat(val3.value)+parseFloat(val4.value);
     let weeklyIncome= rates*totalProductionDaily*7;
