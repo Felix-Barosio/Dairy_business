@@ -1,6 +1,6 @@
-# Yellowstone Dairy Farm
+# Yellowstone Dairy Farm.
 
-By Felix Barosio
+By Felix Barosio.
 
 It is a description of my current project.
 
@@ -17,7 +17,7 @@ It is a description of my current project.
 - [Author Information](#author-information)
 
 
-## Description
+## Description.
 
 The project is called Yellostone Dairy Farm.
 
@@ -25,27 +25,27 @@ The project provides a farmer a platform where they can calculate milk produced 
 It gives them plaform where they can know how much income they can get on daily, weekly and yearly. 
 
 
-## Github Pages Link
+## Github Pages Link.
 
 - [gh-pages link](https://felix-barosio.github.io/Dairy_business/)
 
-## Installation Requirements
+## Installation Requirements.
 
 - An access to the Internet.
 - You can use a phone or a computer or tablet.
 
 
-## Technology Used
+## Technology Used.
 
 - HTML - Used to build the structure of the pages.
 - CSS - Used to style the pages.
 - JavaScript - Used to create dynamically updating content.
 
-## Reference
+## Reference.
 
 - Materialize CSS
 
-## License and Copyright
+## License and Copyright.
 
 [MIT license](https://opensource.org/licenses/MIT)
 
@@ -59,6 +59,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 
 
-## Author Information
+## Author Information.
 
 Barosio Felix - barosiofelix@gmail.com
