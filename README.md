@@ -1,4 +1,4 @@
-# Yellostone Dairy Farm
+# Yellowstone Dairy Farm
 
 By Felix Barosio
 
@@ -47,7 +47,7 @@ It gives them plaform where they can know how much income they can get on daily,
 
 ## License and Copyright
 
-MIT license
+[MIT license](https://opensource.org/licenses/MIT)
 
 Copyright (c) [2022] [Felix Barosio]
 
